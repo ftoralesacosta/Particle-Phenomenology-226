@@ -1,0 +1,196 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5910,        187]
+NotebookOptionsPosition[      5202,        158]
+NotebookOutlinePosition[      5561,        174]
+CellTagsIndexPosition[      5518,        171]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.714768406159301*^9, 3.7147684367970257`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"n", "=", 
+  RowBox[{"Integrate", "[", 
+   RowBox[{
+    RowBox[{"A", "+", 
+     RowBox[{"B", "*", 
+      RowBox[{"E", "^", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "\[CapitalGamma]"}], "*", "t"}], ")"}]}]}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", "0", ",", "3"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.714768398148622*^9, 3.7147685403453617`*^9}, {
+   3.714768658333033*^9, 3.714768660099811*^9}, {3.7147687165720167`*^9, 
+   3.714768716930724*^9}, {3.71476895646402*^9, 3.714768957094455*^9}, {
+   3.714778643508347*^9, 3.7147786444029093`*^9}, {3.71477874811094*^9, 
+   3.714778768521906*^9}, {3.714779617519071*^9, 3.7147796386290627`*^9}, 
+   3.714779717255391*^9, {3.7147801250709248`*^9, 3.714780152012376*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"B", "-", 
+   RowBox[{"B", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "3"}], " ", "\[CapitalGamma]"}]]}], "+", 
+   RowBox[{"3", " ", "A", " ", "\[CapitalGamma]"}]}], 
+  "\[CapitalGamma]"]], "Output",
+ CellChangeTimes->{
+  3.7147688093111687`*^9, 3.714768920013255*^9, {3.714768962259534*^9, 
+   3.7147690684985027`*^9}, 3.714778646940872*^9, {3.7147787541481323`*^9, 
+   3.71477877078441*^9}, 3.714778810650339*^9, 3.714778898504737*^9, {
+   3.714779640597157*^9, 3.7147796649647007`*^9}, 3.714779718956156*^9, {
+   3.714780135696315*^9, 3.7147801579186296`*^9}, 3.714780198788436*^9, 
+   3.714780389675991*^9, 3.714780573548668*^9, 3.714780625839085*^9, 
+   3.7147806582605677`*^9, {3.714780747456274*^9, 3.714780760340781*^9}, 
+   3.7147930208638268`*^9, 3.714793066124897*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"A", "+", 
+     RowBox[{"B", "*", 
+      RowBox[{"E", "^", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "\[CapitalGamma]"}], "*", "t"}], ")"}]}]}]}], ")"}], 
+   "/", "n"}]}]], "Input",
+ CellChangeTimes->{{3.714780180339264*^9, 3.714780196750515*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"A", "+", 
+     RowBox[{"B", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "t"}], " ", "\[CapitalGamma]"}]]}]}], ")"}], " ", 
+   "\[CapitalGamma]"}], 
+  RowBox[{"B", "-", 
+   RowBox[{"B", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "3"}], " ", "\[CapitalGamma]"}]]}], "+", 
+   RowBox[{"3", " ", "A", " ", "\[CapitalGamma]"}]}]]], "Output",
+ CellChangeTimes->{
+  3.714780198838057*^9, 3.7147803897093887`*^9, 3.71478057361476*^9, 
+   3.714780625905678*^9, 3.714780658326947*^9, {3.7147807475221*^9, 
+   3.714780760407201*^9}, 3.714793020929631*^9, 3.714793066185598*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"f", " ", "\[Equal]", "1"}], " ", ",", "A"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7147803329660683`*^9, 3.714780386833111*^9}, {
+  3.7147805668075037`*^9, 3.714780656555313*^9}, {3.714780741910866*^9, 
+  3.714780758558935*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"A", "\[Rule]", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"-", "B"}], "+", 
+      RowBox[{"B", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "3"}], " ", "\[CapitalGamma]"}]]}], "+", 
+      RowBox[{"B", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "t"}], " ", "\[CapitalGamma]"}]], " ", 
+       "\[CapitalGamma]"}]}], 
+     RowBox[{"2", " ", "\[CapitalGamma]"}]]}], "}"}], "}"}]], "Input",
+ CellChangeTimes->{3.714831745275773*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{"f", ",", 
+   RowBox[{"A", " ", "=", " ", 
+    RowBox[{"\[Kappa]", "*", "B"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7147929984071817`*^9, 3.714793064436963*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"\[CapitalGamma]", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "t"}], " ", "\[CapitalGamma]"}]], "+", "\[Kappa]"}], 
+    ")"}]}], 
+  RowBox[{"1", "-", 
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{
+     RowBox[{"-", "3"}], " ", "\[CapitalGamma]"}]], "+", 
+   RowBox[{"3", " ", "\[CapitalGamma]", " ", "\[Kappa]"}]}]]], "Output",
+ CellChangeTimes->{3.7147930210627403`*^9, 3.714793066315681*^9}]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.7148286173559093`*^9}]
+},
+WindowSize->{808, 911},
+WindowMargins->{{129, Automatic}, {46, Automatic}},
+FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 10, \
+2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 144, 2, 28, "Input"],
+Cell[CellGroupData[{
+Cell[727, 26, 782, 17, 28, "Input"],
+Cell[1512, 45, 852, 17, 49, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2401, 67, 350, 11, 28, "Input"],
+Cell[2754, 80, 709, 19, 87, "Output"]
+}, Open  ]],
+Cell[3478, 102, 290, 6, 28, "Input"],
+Cell[3771, 110, 573, 17, 50, InheritFromParent],
+Cell[CellGroupData[{
+Cell[4369, 131, 218, 5, 28, "Input"],
+Cell[4590, 138, 504, 14, 53, "Output"]
+}, Open  ]],
+Cell[5109, 155, 89, 1, 46, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
